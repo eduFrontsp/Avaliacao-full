@@ -1,0 +1,25 @@
+<h2>Extrato de Transferências</h2>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Conta de Origem</th>
+      <th>Conta de Destino</th>
+      <th>Valor</th>
+      <th>Taxa</th>
+      <th>Data de Transferência</th>
+      <th>Data de Agendamento</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let transferencia of transferencias">
+      <td>{{ transferencia.id }}</td>
+      <td>{{ transferencia.contaOrigem }}</td>
+      <td>{{ transferencia.contaDestino }}</td>
+      <td>{{ transferencia.valor }}</td>
+      <td>{{ transferencia.taxa }}</td>
+      <td>{{ transferencia.dataTransferencia }}</td>
+      <td>{{ transferencia.dataAgendamento }}</td>
+    </tr>
+  </tbody>
+</table>
